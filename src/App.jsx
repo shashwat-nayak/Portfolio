@@ -2,11 +2,13 @@ import { memo } from 'react';
 import Styled from 'styled-components';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './Style.scss';
+import NavBar from './components/NavBar';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Container id={'app'}>
+				<NavBar />
 				<Routes>
 					<Route
 						path={'/*'}
